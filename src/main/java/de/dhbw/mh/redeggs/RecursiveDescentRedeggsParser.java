@@ -1,7 +1,7 @@
 package de.dhbw.mh.redeggs;
 
-import static de.dhbw.mh.redeggs.Range.range;
-import static de.dhbw.mh.redeggs.Range.single;
+import static de.dhbw.mh.redeggs.CodePointRange.range;
+import static de.dhbw.mh.redeggs.CodePointRange.single;
 
 /**
  * A parser for regular expressions using recursive descent parsing.
