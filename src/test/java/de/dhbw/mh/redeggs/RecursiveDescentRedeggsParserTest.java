@@ -178,7 +178,7 @@ public class RecursiveDescentRedeggsParserTest {
 		assertThatExceptionOfType(RedeggsParseException.class)
 				.as("Unbalanced parentheses should raise a RedeggsParseException.")
 				.isThrownBy(() -> parser.parse(input))
-				.withMessage("Input ended unexpectedly, expected symbol ')' at position 5.");
+				.withMessage("Parse exception. You moron. Expected: )");
 	}
 	
 	@Test
@@ -187,7 +187,7 @@ public class RecursiveDescentRedeggsParserTest {
 
 		assertThatExceptionOfType(RedeggsParseException.class)
 				.as("Unbalanced parentheses should raise a RedeggsParseException.")
-				.isThrownBy(() -> parser.parse(input)).withMessage("Unexpected symbol ')' at position 6.");
+				.isThrownBy(() -> parser.parse(input)).withMessage("Unexpected symbol ')' at position 5.");
 	}
 
 }
